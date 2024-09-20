@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.kO59teQO917pPYW5orasxgHaHa&pid=Api&P=0&h=180" alt="Chrome_logo" id="logo">
+  <!-- Menu -->
+  <ul id="menu">
+    <li><a href="#home" onmouseover="hover(this)" onmouseout="noHover(this)">Home</a></li>
+    <li><a href="#about" onmouseover="hover(this)" onmouseout="noHover(this)">About</a></li>
+    <li><a href="#services" onmouseover="hover(this)" onmouseout="noHover(this)">Services</a></li>
+    <li><a href="#contact" onmouseover="hover(this)" onmouseout="noHover(this)">Contact</a></li>
+  </ul>
+  <span class="openbtn" onclick="toggleNav()">&#9776;</span>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="section">
+  <p class="para">This is task 01 of PRODIGY INFO_TECH in the domain of WEB DEV, completed by MAYUR V. LADDHA</p>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+  <h1 class="heading">About</h1>
+  <p class="para">Hi! I'm MAYUR V. LADDHA, currently in 2<sup>nd</sup> Year pursuing B.tech (COMPUTER SCIENCE) from VIT Pune...</p>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="section">
+  <h1 class="heading">Services</h1>
+  <ul id="service-list">
+    <li style="list-style: none">Web Development.</li>
+    <li style="list-style: none">Data Structure and Algorithms.</li>
+    <li style="list-style: none">Machine Learning.</li>
+    <li style="list-style: none">Artificial Intelligence.</li>
+    <li style="list-style: none">Problem Solving.</li>
+  </ul>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+  <h1 class="heading">Get in touch</h1>
+  <ul id="contact-info">
+    <li><a href="mailto:pqr123@gmail.com" id="mail">Send Email</a></li>
+    <li><img src="https://tse4.mm.bing.net/th?id=OIP.TIYnrsy6wV3TX312soEx5gHaHY&pid=Api&P=0&h=180" alt="phone" height="15"> +12809818380</li>
+    <li><img src="https://cdn4.iconfinder.com/data/icons/maps-and-location/128/Map__Location_large_dot_indicator_navigation-512.png" alt="location" height="18"> Subhash Nagar, Pune-411002, India</li>
+  </ul>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 Pune India</p>
+</footer>
+
+<!-- External JS -->
+<script src="index.js"></script>
+</body>
+</html>

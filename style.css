@@ -1,0 +1,165 @@
+/* General styles */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.section {
+    padding: 150px 0;
+    text-align: center;
+}
+
+.para {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #0b0c10;
+    margin-bottom: 30px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1f2833;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+}
+
+#menu li {
+    margin: 0 20px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #66fcf1;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+#menu li a:hover {
+    color: #45a29e;
+}
+
+.openbtn {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #66fcf1;
+}
+
+/* Section Styling */
+#home {
+    background-color: #1f2833;
+    color: white;
+}
+
+#about {
+    background-color: #c5c6c7;
+}
+
+#services {
+    background-color: #45a29e;
+    color: white;
+}
+
+#service-list {
+    max-width: 600px;
+    margin: auto;
+    list-style: square;
+}
+
+#service-list li {
+    padding: 10px;
+    font-size: 18px;
+}
+
+#contact {
+    background-color: #1f2833;
+    color: white;
+}
+
+#contact ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#contact ul li {
+    margin: 0 30px;
+    font-size: 18px;
+}
+
+#mail {
+    color: #66fcf1;
+    text-decoration: none;
+}
+
+#mail:hover {
+    color: #45a29e;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #0b0c10;
+    color: #66fcf1;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    #menu {
+        flex-direction: column;
+        display: none;
+    }
+
+    #menu.show {
+        display: flex;
+    }
+
+    #menu li {
+        margin: 10px 0;
+    }
+
+    .openbtn {
+        display: block;
+    }
+}
